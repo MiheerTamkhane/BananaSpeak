@@ -1,9 +1,8 @@
-var button = document.querySelector("#btn-translate");
-var textArea = document.querySelector("#text-area");
-
-
-function clickHandler(){
-    console.log("input",textArea.value);
+const button = document.querySelector("#btn-translate");
+const textArea = document.querySelector("#text-area");
+const output = document.querySelector(".output");
+function clickHandler() {
+  output.innerText = "blah " + textArea.value;
 }
 
-button.addEventListener("click", clickHandler)
+button.addEventListener("click", clickHandler);
